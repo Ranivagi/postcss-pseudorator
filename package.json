@@ -1,0 +1,32 @@
+{
+  "name": "postcss-pseudorator",
+  "version": "0.0.1",
+  "description": "Pseudo element separator, PostCSS plugin",
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin",
+    "pseudo",
+    "selector",
+    "separator"
+  ],
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Ränivägi <info@ranivagi.ee>",
+  "license": "MIT",
+  "repository": "Ranivagi/postcss-pseudorator",
+  "dependencies": {
+    "postcss": "^7.0.18",
+    "postcss-selector-parser": "^6.0.2"
+  },
+  "devDependencies": {
+    "jest": "^24.9.0"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}

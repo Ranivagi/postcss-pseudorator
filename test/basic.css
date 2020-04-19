@@ -1,0 +1,10 @@
+.basic-notaffected {
+    color: green;
+}
+.basic-separate,
+.basic-separate:focus-within {
+    color: red;
+}
+.basic-alone:focus-within {
+    color: green;
+}

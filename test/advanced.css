@@ -1,0 +1,20 @@
+.advanced-not,
+.advanced-not:not(:focus-within) {
+    color: red;
+}
+.advanced-multi,
+.advanced-multi:hover,
+.advanced-multi:dir(ltr),
+.advanced-multi:focus-within {
+    color: red;
+}
+.advanced-only:dir(ltr),
+.advanced-only:focus-within {
+    color: red;
+}
+@media (min-width: 100px) {
+    .advanced-media,
+    .advanced-media:focus-within {
+        color: red;
+    }
+}
