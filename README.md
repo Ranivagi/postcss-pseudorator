@@ -60,6 +60,7 @@ and set this plugin in settings.
 
 [official docs]: https://github.com/postcss/postcss#usage
 
+
 ##Options
 
 - `separate`: array of pseudo elements which should be separated from others.
