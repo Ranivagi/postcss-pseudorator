@@ -34,7 +34,7 @@ Please note that Pseudorator is **not a polyfill** for unknown pseudo element.
 ## Installation
 
 ```html
-npm install postcss-pseudonator --save-dev
+npm install postcss-pseudorator --save-dev
 ```
 
 ## Usage
