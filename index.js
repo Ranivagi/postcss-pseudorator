@@ -1,12 +1,13 @@
 const postcss = require("postcss");
 const selectorParser = require("postcss-selector-parser");
 
-module.exports = postcss.plugin("postcss-pseudorator", (opts = { }) => {
+module.exports = (opts = {}) => {
 
     let separatePseudos = new Set(opts.separate);
 
-    return (root) => {
-        root.walkRules((rule) => {
+    return {
+        postcssPlugin: "postcss-pseudorator",
+        Once(root) { root.walkRules((rule) => {
             rule.selector = selectorParser((selectors) => {
                 let separateSelectors = [];
                 selectors.walkPseudos((pseudo) => {
@@ -31,6 +32,7 @@ module.exports = postcss.plugin("postcss-pseudorator", (opts = { }) => {
                     }
                 }
             }).processSync(rule.selector);
-        });
-    }
-});
+        })}
+    };
+};
+module.exports.postcss = true;
